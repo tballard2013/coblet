@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coblet</title>
+    <script type="module" src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Coblet: A basic metadata driven web forms library</h1>
+
+
+    <div class="example">
+        <div id="coblet">
+            TBD: INJECT VIEW HERE
+        </div>
+        <div style="text-align: center; margin: 1em;">
+            <button onclick="init()">Initialize New Coblet</button>
+        </div>
+    </div>
+
+    TODOS:
+    <ul>
+        <li>a basic example</li>
+    </ul>
+
+    <h2>Why did I go this route? </h2>
+
+    In MVC app views we were creating at the time, the only thing that differed from view-type to view-type was the
+    data--which included enough information to express an end-user facing web form.
+    Making a swag at the contract between the gateway endpoint and the client-side rendering was quick and easy enough
+    to get both sides of producing that contract started if it was more than one developer.
+    Unlike pure restful interfaces, the metadata could include additional structure to help inform how error and success
+    handling would surface.
+
+    <p>
+        By dummying up a metadata structure designed specifically to inform our front-end library we were able to stand
+        up new forms quickly with considerable reuse because we relied on the library render engine for the form
+        generation in the front-end.
+        A helpful comparison might be something like swagger, but more specifically oriented toward a user-facing
+        front-end solution.
+    </p>
+
+    <p>Customizations for look feel are intended to be handled using CSS to style the rendered output.
+        Also, the input types are intended to be customizable, and once you've gone to the trouble to create one, it can be
+        reused as part of the metadata language that powers it.
+        That's the basic idea...at the moment, I'm fiddling a specific use-case which is driving development of this.
+        If it gains traction, more to come!
+    </p>
+
+    <h2>What's up with the name?</h2>
+    
+    Once upon a time there was a project with a name that might have sounded similar;
+    despite being successful, it wasn't something that rhymes with wrangler-js (and thankfully so.)
+    Whether this is actually any better. You decide...if/when there's something here to be tried out.
+
+</body>
+
+</html>

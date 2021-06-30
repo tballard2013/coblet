@@ -1,0 +1,17 @@
+body {
+    margin: 0; 
+    padding: 1em;
+}
+
+
+#coblet {
+    width: 33vw;
+    height: 33vw;
+    background: #eee;
+    border: 2px #000 solid;
+}
+
+.example {
+    float: right;
+    margin: 2em 0 2em 2em;
+}
