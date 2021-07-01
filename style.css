@@ -1,17 +1,39 @@
 body {
-    margin: 0; 
+    margin: 0;
     padding: 1em;
 }
-
 
 #coblet {
     width: 33vw;
     height: 33vw;
     background: #eee;
+    box-shadow: 2px 2px 10px #000;
     border: 2px #000 solid;
 }
 
 .example {
     float: right;
     margin: 2em 0 2em 2em;
+}
+
+.centered {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* start form style */
+.coblet-form h1 {
+    margin: 0px;
+}
+.coblet-form {
+    border-collapse: collapse;
+}
+.coblet-form td { 
+    padding: 4px;
+}
+.coblet-form tr:nth-child(2) {
+    background: #ccf;
+    color: #000;
 }
