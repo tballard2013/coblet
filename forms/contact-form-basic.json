@@ -1,0 +1,41 @@
+{
+   "title": "Contact Form",
+   "submit": "Save",
+   "reset": true,
+   "fields": [
+      "firstName",
+      "lastName",
+      "phone",
+      "gender"
+   ],
+   "firstName": {
+      "name": "firstName",
+      "label": "First name",
+      "type": "text",
+      "placeholder": "Thomas",
+      "maxlength": 50,
+      "required": true
+   },
+   "lastName": {
+      "name": "lastName",
+      "label": "Last name",
+      "type": "text",
+      "placeholder": "Ballard"
+   },
+   "phone": {
+      "name": "phone",
+      "label": "Phone Number",
+      "type": "tel"
+   },
+   "gender": {
+      "name": "gender",
+      "label": "Gender",
+      "type": "select",
+      "possibleValues": [
+         "prefer not to answer",
+         "male",
+         "female",
+         "other"
+      ]
+   }
+ }

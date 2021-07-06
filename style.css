@@ -28,6 +28,7 @@ body {
     margin: 0px;
 }
 .coblet-form {
+    width: 100%;
     border-collapse: collapse;
 }
 .coblet-form td { 
@@ -36,4 +37,17 @@ body {
 .coblet-form tr:nth-child(2) {
     background: #ccf;
     color: #000;
+}
+
+input:invalid+span:after {
+    position: absolute; content: '✖';
+    padding-left: 5px;
+    color: #8b0000;
+}
+  
+input:valid+span:after {
+    position: absolute;
+    content: '✓';
+    padding-left: 5px;
+    color: #009000;
 }
