@@ -21,7 +21,7 @@ window.initCobletForm = (function (data) {
             });
         })
         .catch(function (error) {
-            console.error('Request failed', error);
+            console.error('Error!', error);
             throw(error);
         });
 

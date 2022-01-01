@@ -1,0 +1,56 @@
+{
+   "title": "Budget Form",
+   "sections": [
+      "income-fields", "expense-fields"
+   ],
+   "income-fields-title": "Income",
+   "income-fields": [
+      "paychecks",
+      "dividends",
+      "other"
+   ],
+   "expense-fields-title": "Expenses",
+   "expense-fields": [
+      "housing", 
+      "food", 
+      "transportation", 
+      "insurance"
+   ],
+   "housing": {
+      "name": "housing",
+      "label": "Housing (Mortgage/Rent/HOA)",
+      "type": "currency",
+      "info": "Aim for < 50% of income.",
+      "placeholder": "0.00"
+   },
+   "food": {
+      "name": "food",
+      "label": "Food/Dining/Grocery",
+      "type": "currency"
+   },
+   "transportation": {
+      "name": "transportation",
+      "label": "Transportation",
+      "label-tooltip": "Cars, Trains, Airplane, Buses, Ferries, Fuel, etc.",
+      "type": "currency"
+   },
+   "paychecks": {
+      "name": "paychecks",
+      "label": "Paychecks",
+      "type": "currency",
+      "placeholder": "0.00"
+   },
+   "dividends": {
+      "name": "dividends",
+      "label": "Investments",
+      "type": "currency",
+      "placeholder": "0.00"
+   },
+   "other": {
+      "name": "other",
+      "label": "Other",
+      "type": "currency",
+      "placeholder": "0.00"
+   }
+
+ }

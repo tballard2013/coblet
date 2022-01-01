@@ -4,11 +4,13 @@ body {
 }
 
 #coblet {
-    width: 33vw;
-    height: 33vw;
+    width: 50vw;
+    height: 50vw;
     background: #eee;
     box-shadow: 2px 2px 10px #000;
     border: 2px #000 solid;
+    overflow: auto;
+    resize: both;
 }
 
 .example {
@@ -24,7 +26,8 @@ body {
 }
 
 /* start form style */
-.coblet-form h1 {
+.coblet-form h1,
+.coblet-form h2 {
     margin: 0px;
 }
 .coblet-form {
@@ -34,7 +37,10 @@ body {
 .coblet-form td { 
     padding: 4px;
 }
-.coblet-form tr:nth-child(2) {
+.coblet-form thead {
+    border-bottom: 2px #ddd solid;
+}
+.coblet-form tbody tr:nth-child(2) {
     background: #ccf;
     color: #000;
 }
