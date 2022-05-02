@@ -15,7 +15,7 @@ body {
 
 .example {
     float: right;
-    margin: 2em 0 2em 2em;
+    margin: -2rem 0 2rem 2rem;
 }
 
 .centered {
@@ -40,8 +40,8 @@ body {
 .coblet-form thead {
     border-bottom: 2px #ddd solid;
 }
-.coblet-form tbody tr:nth-child(2) {
-    background: #ccf;
+.coblet-form tbody tr:nth-child(even) {
+    background: #ddf;
     color: #000;
 }
 

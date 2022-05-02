@@ -20,24 +20,32 @@ export function buildFormInput(word) {
                 </select>
                 `
             break;
-        case 'tel':
-            html += `<input type="tel" 
+        case 'email':
+            html += `<input type="email" 
                 id="${word.name}" name="${word.name}"
-                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                pattern=".+@.+"
                 >
                 <span class="validity"></span>
                 `
             break;
+        case 'tel':
+            html += `<input type="tel" 
+                    id="${word.name}" name="${word.name}"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    >
+                    <span class="validity"></span>
+                    `
+            break;
         case 'currency': // TODO: is there a canonical solution for currency?
-                html += `
+            html += `
                 <input type="number" 
                 value="${word.value || 0}"
                 placeholder="${word.placeholder}"
                 >`
             break;
         default:
-                html += word && word.type ? `unknown word type "${word.type}"` : 
-                    `<pre>${JSON.stringify(word, null, 4)}</pre>`;
+            html += word && word.type ? `unknown word type "${word.type}"` :
+                `<pre>${JSON.stringify(word, null, 4)}</pre>`;
     }
     return html;
 

@@ -17,21 +17,32 @@
     A basic metadata driven web forms library.
 
     <div class="example">
-        <div id="coblet">
-            <div class="centered">
-            (Form example will be injected here.)
-            </div>
-        </div>
         <div style="text-align: center; margin: 1em;">
             <button onclick="initCobletForm({ 
                 el: '#coblet', 
                 dictionary: './forms/contact-form-basic.json'
-            })">Basic Contact Form</button>
+            })">Basic Contact Form</button
+            ><button onclick="initCobletForm({ 
+                el: '#coblet', 
+                showCode: true,
+                dictionary: './forms/contact-form-basic.json'
+            })">(Code)</button>
+
             <button onclick="initCobletForm({ 
                 el: '#coblet', 
                 dictionary: './forms/budget-form-basic.json'
-            })">Basic Budget Form</button>
-           
+            })">Basic Budget Form</button
+            ><button onclick="initCobletForm({ 
+                el: '#coblet', 
+                showCode: true,
+                dictionary: './forms/budget-form-basic.json'
+            })">(Code)</button>
+
+        </div>
+        <div id="coblet">
+            <div class="centered">
+            (Form example will be injected here. <br>Select a form using the buttons above.)
+            </div>
         </div>
     </div>
 

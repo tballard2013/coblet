@@ -1,5 +1,7 @@
 {
    "title": "Budget Form",
+   "submit": "Save",
+   "reset": true,
    "sections": [
       "income-fields", "expense-fields"
    ],
@@ -20,12 +22,17 @@
       "name": "housing",
       "label": "Housing (Mortgage/Rent/HOA)",
       "type": "currency",
-      "info": "Aim for < 50% of income.",
+      "info": "Aim for < 30% of income.",
       "placeholder": "0.00"
    },
    "food": {
       "name": "food",
       "label": "Food/Dining/Grocery",
+      "type": "currency"
+   },
+   "insurance": {
+      "name": "insurance",
+      "label": "Insurance",
       "type": "currency"
    },
    "transportation": {

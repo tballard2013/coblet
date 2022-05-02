@@ -15,10 +15,14 @@ window.initCobletForm = (function (data) {
         .then(response => response.json())
         .then(json => {
             console.log('Request successful', json);
-            const coblet = new Coblet({
-                el: data.el,
-                metadata: json
-            });
+            if (data.showCode) {
+                document.querySelector(data.el).innerHTML = `<pre>${JSON.stringify(json, null, 4)}</pre>`;
+            } else {
+                const coblet = new Coblet({
+                    el: data.el,
+                    metadata: json
+                });
+            }
         })
         .catch(function (error) {
             console.error('Error!', error);
